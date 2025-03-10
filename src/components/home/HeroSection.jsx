@@ -27,7 +27,7 @@ export default function HeroSection() {
         Hey! It's me Faiz,
       </p>
       <div className="w-full lg:max-w-6xl font-lexend">
-        <h1 className="text-pretty text-[3rem] leading-none md:text-6xl lg:w-3/4 lg:text-7xl text-[var(--text-primary)] font-bebas tracking-wider">
+        <h1 className="text-pretty text-5xl leading-none md:text-6xl lg:w-3/4 lg:text-7xl text-[var(--text-primary)] font-bebas tracking-wider">
           Developing
           <span className="text-[var(--highlight)]"> interactive and accessible </span>
           web experiences efficiently.
