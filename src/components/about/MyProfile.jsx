@@ -1,4 +1,4 @@
-import ProfileImage from "../../assets/images/profile.jpeg";
+// import ProfileImage from "../../assets/images/profile.jpeg";
 import resume from "../../assets/document/resume.pdf";
 
 export default function MyProfile() {
@@ -7,7 +7,7 @@ export default function MyProfile() {
       <div className="flex flex-col items-center gap-8 overflow-x-hidden pt-0 sm:flex-row md:gap-16 md:py-12 md:pt-8">
         <div className="relative w-full sm:w-1/2">
           <div className="h-full w-full overflow-hidden rounded-full">
-            <img src={ProfileImage} alt="Hero Image" loading="lazy" className="aspect-[4/4] h-[400px] w-[400px] object-cover object-top transition duration-300 hover:scale-[1.015]" />
+            {/* <img src={ProfileImage} alt="Hero Image" loading="lazy" className="aspect-[4/4] h-[400px] w-[400px] object-cover object-top transition duration-300 hover:scale-[1.015]" /> */}
           </div>
         </div>
         <div className="w-full space-y-6">
