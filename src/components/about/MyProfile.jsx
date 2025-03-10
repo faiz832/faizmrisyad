@@ -1,4 +1,4 @@
-import ProfileImage from "../../assets/images/profile.jpeg";
+import ProfileImage from "../../assets/images/profile-img.jpeg";
 import resume from "../../assets/document/resume.pdf";
 
 export default function MyProfile() {
