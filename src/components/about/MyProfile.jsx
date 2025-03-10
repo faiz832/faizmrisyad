@@ -1,5 +1,5 @@
 import resume from "../../assets/document/resume.pdf";
-import profile from "./profile-img.jpg";
+import profile from "../../assets/images/anime-list.png";
 
 export default function MyProfile() {
   return (
