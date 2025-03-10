@@ -1,9 +1,9 @@
-import searchfilm from "../../assets/asd/search-film.png";
-import exploresolo from "../../assets/asd/explore-solo.png";
-import simpleblog from "../../assets/asd/simple-blog.png";
-import animelist from "../../assets/asd/anime-list.png";
-import tokokelontong from "../../assets/asd/toko-kelontong.png";
-import simplyproperty from "../../assets/asd/simplyproperty.png";
+import searchfilm from "../../assets/images/search-film.png";
+import exploresolo from "../../assets/images/explore-solo.png";
+import simpleblog from "../../assets/images/simple-blog.png";
+import animelist from "../../assets/images/anime-list.png";
+import tokokelontong from "../../assets/images/toko-kelontong.png";
+import simplyproperty from "../../assets/images/simplyproperty.png";
 
 export const projectData = [
   {

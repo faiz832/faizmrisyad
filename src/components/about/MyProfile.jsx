@@ -1,5 +1,5 @@
 import resume from "../../assets/document/resume.pdf";
-import profile from "../../assets/asd/profile-img.jpg";
+import profile from "../../assets/images/profile-img.jpg";
 
 export default function MyProfile() {
   return (
