@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+@import "tailwindcss";
+
+@theme {
+  --font-satoshi: "Satoshi", sans-serif;
+  --font-lexend: "Lexend", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+}
+
+:root {
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Light Mode */
+:root {
+  --text-color: #213547;
+  --text-secondary: #0a0a0a;
+  --bg-color: #f7f8fa;
+  --highlight: #3065af;
+  --bg-600: #cbd5e1;
+  --bg-700: #e2e8f0;
+  --bg-800: #fff;
+  --bg-900: #f7f8fa;
+  --backdrop: hsla(0, 0%, 100%, 0.8);
+  --accent: #f1f1f1;
+}
+
+/* Dark Mode */
+.dark {
+  --text-color: rgba(255, 255, 255, 0.87);
+  --text-secondary: #a9a9bd;
+  --bg-color: #0b0b0d;
+  --highlight: #6de9ff;
+  --bg-600: #2c2c35;
+  --bg-700: #191920;
+  --bg-800: #111116;
+  --bg-900: #0b0b0d;
+  --backdrop: rgba(11, 11, 13, 0.8);
+  --accent: #16161a;
+}
+
+/* Terapkan ke body */
+html {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  scrollbar-gutter: stable;
+  font-family: "Satoshi", sans-serif;
+}
+
+/* Styling untuk Webkit browsers (Chrome, Safari, dll) */
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Track transparan */
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid var(--bg-900);
+  cursor: grab;
+  border-radius: 0.75rem;
+  background-color: var(--bg-600);
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Styling untuk Firefox */
+* {
+  scrollbar-width: thin; /* Lebar scrollbar: "auto", "thin", atau "none" */
+  scrollbar-color: var(--bg-700) transparent; /* Warna thumb dan track */
+}
+
+::selection {
+  color: var(--bg-900);
+  background: var(--highlight);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Urutan dari kecil ke besar */
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Max-Screen */
+.max-screen {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+
+/* Urutan dari kecil ke besar */
+@media (min-width: 480px) {
+  .max-screen {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 640px) {
+  .max-screen {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .max-screen {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .max-screen {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .max-screen {
+    max-width: 1280px;
+  }
+}
+
+/* Section */
+/* section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 640px) {
+  section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+} */
