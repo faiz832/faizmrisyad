@@ -6,11 +6,14 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Container from "./components/Container";
 import Footer from "./components/footer/Footer";
+import NProgressLoader from "../src/components/nprogress/NprogressLoader";
+
 import "./App.css";
 
 export default function App() {
   return (
     <Router>
+      <NProgressLoader /> {/* Pindahkan ke sini agar berada dalam Router */}
       <Header />
       <Container>
         <Routes>

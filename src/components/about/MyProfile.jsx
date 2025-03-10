@@ -14,7 +14,7 @@ export default function MyProfile() {
           <h1 className="text-balance font-bebas text-5xl lg:text-7xl">
             A <span className="text-[var(--highlight)]">frontend developer</span> &amp; web developer
           </h1>
-          <p className="text-balance">I collaborate with brands globally to design impactful, mission-focused websites that drive results and achieve business goals.</p>
+          <p className="text-balance">I interned at a national brand, crafting pixel-perfect, engaging, and accessible digital experiences that drive results and support business goals.</p>
           <div>
             <a download="faizmr-resume" href={resume} className="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold bg-[var(--highlight)] text-[var(--bg-900)] px-8 py-3">
               My Resume
