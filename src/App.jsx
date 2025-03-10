@@ -8,6 +8,7 @@ import Container from "./components/Container";
 import Footer from "./components/footer/Footer";
 import NProgressLoader from "../src/components/nprogress/NprogressLoader";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollUp from "./components/ScrollUp";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ export default function App() {
     <Router>
       <ScrollToTop />
       <NProgressLoader />
+      <ScrollUp />
       <Header />
       <Container>
         <Routes>
