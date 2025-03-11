@@ -29,6 +29,7 @@
   --bg-900: #f7f8fa;
   --backdrop: hsla(0, 0%, 100%, 0.8);
   --accent: #f1f1f1;
+  --bglightdark: #fff;
 }
 
 /* Dark Mode */
@@ -43,6 +44,7 @@
   --bg-900: #0b0b0d;
   --backdrop: rgba(11, 11, 13, 0.8);
   --accent: #16161a;
+  --bglightdark: #191920;
 }
 
 /* Terapkan ke body */
