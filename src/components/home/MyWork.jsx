@@ -30,6 +30,7 @@ export default function MyWork() {
         rootMargin="-50px"
       />
       <p className="mt-2 text-base">Here's a collection of some of my recent projects.</p>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 sm:gap-x-16 sm:gap-y-8 py-16 group">
         {projects.map((project) => (
           <div key={project.id} className="group/item">
@@ -39,7 +40,7 @@ export default function MyWork() {
                   <img src={project.image} alt={project.title} className="w-full h-auto object-cover group-hover/item:scale-105 transition-all duration-300 ease-in-out" />
                 </div>
                 <div className="mt-4 space-y-2">
-                  <div className="flex justify-between">
+                  <div className="hidden lg:flex justify-between">
                     <h1 className="text-xl leading-normal">{project.title}</h1>
                     <div className="flex gap-2">
                       {project.stack.map((tech, index) => (

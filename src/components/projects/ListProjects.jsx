@@ -22,7 +22,7 @@ export default function ListProjects() {
   return (
     <div>
       {/* Navigation Categories */}
-      <div className="flex space-x-4 mt-8 mb-12">
+      <div className="flex justify-center space-x-4 mt-8 mb-12">
         {projectCategories.map((category) => (
           <button
             key={category.name}
@@ -45,7 +45,7 @@ export default function ListProjects() {
                   <img src={project.image} alt={project.title} className="w-full h-auto object-cover group-hover/item:scale-105 transition-all duration-300 ease-in-out" />
                 </div>
                 <div className="mt-4 space-y-2">
-                  <div className="flex justify-between">
+                  <div className="hidden lg:flex justify-between">
                     <h1 className="text-xl leading-normal">{project.title}</h1>
                     <div className="flex gap-2">
                       {project.stack.map((tech, index) => (
