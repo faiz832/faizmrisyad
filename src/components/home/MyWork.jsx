@@ -44,7 +44,7 @@ export default function MyWork() {
                     <h1 className="text-xl leading-normal">{project.title}</h1>
                     <div className="flex gap-2">
                       {project.stack.map((tech, index) => (
-                        <div key={index} className="flex items-center justify-center gap-1 bg-[var(--bg-800)] px-4 py-1 rounded-full text-xs">
+                        <div key={index} className="flex items-center justify-center gap-1 bg-[var(--bglightdark)] px-4 py-1 rounded-full text-xs">
                           <img src={tech.icon} alt={tech.name} className="w-4 h-4" />
                           <span className="mb-0">{tech.name}</span>
                         </div>
