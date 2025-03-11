@@ -45,13 +45,24 @@ export default function ListProjects() {
                   <img src={project.image} alt={project.title} className="w-full h-auto object-cover group-hover/item:scale-105 transition-all duration-300 ease-in-out" />
                 </div>
                 <div className="mt-4 space-y-2">
-                  <h1 className="text-xl leading-normal">{project.title}</h1>
+                  <div className="flex justify-between">
+                    <h1 className="text-xl leading-normal">{project.title}</h1>
+                    <div className="flex gap-2">
+                      {project.stack.map((tech, index) => (
+                        <div key={index} className="flex items-center justify-center gap-1 bg-[var(--bg-800)] px-4 py-1 rounded-full text-xs">
+                          <img src={tech.icon} alt={tech.name} className="w-4 h-4" />
+                          <span className="mb-0">{tech.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                   <div className="flex justify-between">
                     <div className="flex flex-wrap gap-2">
                       <p className="text-sm capitalize text-[var(--text-secondary)]">{project.category}</p>
                     </div>
                     <p className="text-sm text-[var(--text-secondary)]">{project.year}</p>
                   </div>
+                  <p className="text-sm text-[var(--text-secondary)] line-clamp-2">{project.desc}</p>
                 </div>
               </div>
             </a>
