@@ -68,7 +68,7 @@ export const projectData = [
   },
 ];
 
-export const projectNav = [
+export const projectCategories = [
   {
     name: "all",
   },
