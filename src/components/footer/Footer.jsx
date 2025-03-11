@@ -60,7 +60,12 @@ export default function Footer() {
         </div>
       </div>
       <div className="z-10 flex flex-col justify-between gap-4 sm:flex-row">
-        <p className="mb-16 text-center text-sm sm:mb-0 sm:text-left">Faiz Muhammad Risyad - 2025</p>
+        <p className="mb-16 text-center text-sm sm:mb-0 sm:text-left">
+          Design Inspired By{" "}
+          <a href="https://www.instagram.com/devraj_uiux/" target="_blank" className="hover:underline">
+            @devraj_uiux
+          </a>
+        </p>
         <div className="sm:flex justify-center items-center opacity-container hidden gap-6 text-text-secondary">
           <a aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/devraj-chatribin/">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
