@@ -6,7 +6,9 @@ export default function MyWork() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    setProjects(projectData);
+    setProjects(
+      [...projectData].sort((a, b) => b.id - a.id).slice(0, 6) // Ambil hanya 6 proyek dengan ID terbesar
+    );
   }, []);
 
   return (
@@ -15,7 +17,7 @@ export default function MyWork() {
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "var(--highlight)" }}>
           <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.287Z"></path>
         </svg>
-        <p className="font-lexend text-sm uppercase leading-none text-[var(--highlight)]">My Work</p>
+        <p className="font-lexend text-sm uppercase leading-none text-[var(--highlight)]">My Projects</p>
       </div>
       <SplitText
         text="Recent Projects"

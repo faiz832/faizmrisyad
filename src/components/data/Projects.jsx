@@ -4,6 +4,9 @@ import simpleblog from "../../assets/images/simple-blog.png";
 import animelist from "../../assets/images/anime-list.png";
 import tokokelontong from "../../assets/images/toko-kelontong.png";
 import simplyproperty from "../../assets/images/simplyproperty.png";
+import devcareerai from "../../assets/images/devcareer-ai.png";
+import healthlyai from "../../assets/images/healthly-ai.png";
+import menpyai from "../../assets/images/menpy-ai.png";
 
 export const projectData = [
   {
@@ -65,6 +68,36 @@ export const projectData = [
     stack: "React, Tailwind",
     link: "https://simply-property.vercel.app/",
     year: "2023",
+  },
+  {
+    id: 7,
+    image: devcareerai,
+    title: "DevCareer AI",
+    category: "fullstack",
+    desc: "A course website with AI resume optimization. Using Laravel, Tailwind, MySQL, and Gemini-AI API",
+    stack: "Laravel, Tailwind, MySQL",
+    link: "https://github.com/faiz832/DevCareer-AI",
+    year: "2024",
+  },
+  {
+    id: 8,
+    image: healthlyai,
+    title: "Healthly AI",
+    category: "fullstack",
+    desc: "A healthcare website with food image AI generator that can be used to calculate the nutritional value of food. Using Laravel, Tailwind, MySQL, and Gemini-AI API",
+    stack: "Laravel, Tailwind, MySQL",
+    link: "https://github.com/faiz832/healthly",
+    year: "2024",
+  },
+  {
+    id: 9,
+    image: menpyai,
+    title: "Menpy AI",
+    category: "fullstack",
+    desc: "Menpy AI is an AI-driven platform for mental health, offering assessments, personalized support, and tools to foster emotional balance and well-being. It's a cutting-edge solution for individuals seeking holistic wellness.",
+    stack: "Laravel, Tailwind, MySQL",
+    link: "https://github.com/faiz832/Menpy-AI",
+    year: "2024",
   },
 ];
 
