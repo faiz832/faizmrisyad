@@ -1,3 +1,5 @@
+import SplitText from "../SplitText";
+
 export default function Footer() {
   return (
     <footer className="max-screen px-4 md:px-6 lg:px-8 z-10 space-y-6 py-8">
@@ -10,7 +12,16 @@ export default function Footer() {
           <p className="text-xs text-[var(--text-primary)]">Available for work</p>
         </div>
 
-        <h2 className="m-auto mb-6 max-w-md text-center font-bebas text-6xl font-semibold text-[var(--text-primary)]">Let's create your next big idea.</h2>
+        <SplitText
+          text="Ready to create? Let’s get started!"
+          className="m-auto mb-6 max-w-md text-6xl font-semibold text-center font-bebas text-[var(--text-primary)] leading-none"
+          delay={50}
+          animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+          animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+          easing="easeOutCubic"
+          threshold={0.2}
+          rootMargin="-50px"
+        />
 
         <a className="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold bg-[var(--highlight)] text-[var(--bg-900)] px-8 py-3" href="/contact">
           Contact Me
