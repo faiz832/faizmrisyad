@@ -1,3 +1,4 @@
+import Experience from "../components/about/Experience";
 import MyProfile from "../components/about/MyProfile";
 import TechSlider from "../components/about/TechSlider";
 
@@ -6,6 +7,7 @@ export default function About() {
     <>
       <MyProfile />
       <TechSlider />
+      <Experience />
     </>
   );
 }
