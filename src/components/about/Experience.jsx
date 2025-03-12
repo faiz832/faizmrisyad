@@ -51,7 +51,7 @@ export default function Experience() {
               <img src={work.img} alt={work.company} loading="lazy" width="50" height="50" className="mr-2 aspect-square h-10 w-fit rounded-full border border-[var(--bg-600)] bg-[var(--bg-800)]" />
               <div className="w-full">
                 <h6 className="text-text-primary">{work.position}</h6>
-                <div className="flex justify-between">
+                <div className="flex flex-wrap-reverse justify-between">
                   <a target="_blank" className="text-sm text-[var(--text-secondary)] underline-offset-4 hover:underline" href={work.link}>
                     @{work.company}
                   </a>
