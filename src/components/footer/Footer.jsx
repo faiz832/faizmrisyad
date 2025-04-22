@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SplitText from "../SplitText";
 
 export default function Footer() {
@@ -23,9 +24,9 @@ export default function Footer() {
           rootMargin="-50px"
         />
 
-        <a className="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold bg-[var(--highlight)] text-[var(--bg-900)] px-8 py-3" href="/contact">
+        <Link to="/contact" className="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold bg-[var(--highlight)] text-[var(--bg-900)] px-8 py-3" href="/contact">
           Contact Me
-        </a>
+        </Link>
 
         <div className="flex opacity-container mt-8 gap-6 text-text-secondary sm:hidden">
           <a aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/faizrisyad">
