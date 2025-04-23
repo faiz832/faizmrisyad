@@ -7,6 +7,7 @@ import simplyproperty from "../../assets/images/simplyproperty.png";
 import devcareerai from "../../assets/images/devcareer-ai.png";
 import healthlyai from "../../assets/images/healthly-ai.png";
 import menpyai from "../../assets/images/menpy-ai.png";
+import alphamode from "../../assets/images/alpha-mode.png";
 import HTML from "../../assets/icons/HTML.svg";
 import CSS from "../../assets/icons/CSS.svg";
 import JS from "../../assets/icons/JS.svg";
@@ -216,6 +217,25 @@ export const projectData = [
     ],
     link: "https://github.com/faiz832/Menpy-AI",
     year: "2024",
+  },
+  {
+    id: 10,
+    image: alphamode,
+    title: "Alpha Mode Daily",
+    category: "frontend",
+    desc: "Alpha Mode is a side project I built to boost my personal productivity by aligning daily routines through a real-time, visual schedule. The activities are currently static, serving as a structured guide to balance focus, faith, and self-improvement.",
+    stack: [
+      {
+        name: "Next",
+        icon: Next,
+      },
+      {
+        name: "Tailwind",
+        icon: Tailwind,
+      },
+    ],
+    link: "https://alpha-mode-activity.vercel.app/",
+    year: "2025",
   },
 ];
 
