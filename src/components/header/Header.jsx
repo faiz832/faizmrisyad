@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link, useLocation } from "react-router-dom";
 import ToggleButtonTheme from "./ToggleButtonTheme";
 import NavLinks from "./NavLinks";
 
@@ -89,9 +90,9 @@ export default function Header() {
             transform: "none",
           }}
         >
-          <a href="/" className="text-xl font-lexend">
+          <Link to="/" className="text-xl font-lexend">
             FMR
-          </a>
+          </Link>
           <NavLinks />
           <ToggleButtonTheme />
         </nav>
@@ -100,16 +101,16 @@ export default function Header() {
         <div className="absolute bottom-0 left-0 right-0 z-50 w-full rounded-t-3xl border-t border-[var(--bg-700)] bg-[var(--backdrop)] text-[var(--text-secondary)] shadow backdrop-blur-md transition-transform duration-300">
           <ul className="flex w-full justify-evenly">
             <li className="p-4">
-              <a className="flex flex-col items-center justify-center gap-1 text-highlight-primary" href="/">
+              <Link className="flex flex-col items-center justify-center gap-1 text-highlight-primary" to="/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-home">
                   <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                   <polyline points="9 22 9 12 15 12 15 22"></polyline>
                 </svg>
                 <span className="text-xs">Home</span>
-              </a>
+              </Link>
             </li>
             <li className="p-4">
-              <a className="flex flex-col items-center justify-center gap-1 text-text-primary" href="/about">
+              <Link className="flex flex-col items-center justify-center gap-1 text-text-primary" to="/about">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-smile">
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
@@ -117,10 +118,10 @@ export default function Header() {
                   <line x1="15" x2="15.01" y1="9" y2="9"></line>
                 </svg>
                 <span className="text-xs">About</span>
-              </a>
+              </Link>
             </li>
             <li className="p-4">
-              <a className="flex flex-col items-center justify-center gap-1 text-text-primary" href="/projects">
+              <Link className="flex flex-col items-center justify-center gap-1 text-text-primary" to="/projects">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-layout-dashboard">
                   <rect width="7" height="9" x="3" y="3" rx="1"></rect>
                   <rect width="7" height="5" x="14" y="3" rx="1"></rect>
@@ -128,16 +129,16 @@ export default function Header() {
                   <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                 </svg>
                 <span className="text-xs">Projects</span>
-              </a>
+              </Link>
             </li>
             <li className="p-4">
-              <a className="flex flex-col items-center justify-center gap-1 text-text-primary" href="/contact">
+              <Link className="flex flex-col items-center justify-center gap-1 text-text-primary" to="/contact">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-send">
                   <path d="m22 2-7 20-4-9-9-4Z"></path>
                   <path d="M22 2 11 13"></path>
                 </svg>
                 <span className="text-xs">Contact</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
