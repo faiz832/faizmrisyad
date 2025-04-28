@@ -20,7 +20,7 @@ export default function Form() {
   };
 
   return (
-    <section className="contact section">
+    <section className="contact section max-screen px-4 md:px-6 lg:px-8 z-10 space-y-6 py-8">
       <div className="contact-container grid">
         <div className="contact-content">
           <h3 className="font-lexand text-3xl font-semibold text-center mb-4">Talk to me</h3>
