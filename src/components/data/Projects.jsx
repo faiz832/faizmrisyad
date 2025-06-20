@@ -8,6 +8,8 @@ import devcareerai from "../../assets/images/devcareer-ai.png";
 import healthlyai from "../../assets/images/healthly-ai.png";
 import menpyai from "../../assets/images/menpy-ai.png";
 import alphamode from "../../assets/images/alpha-mode.png";
+import cvrizkibangun from "../../assets/images/cv-rizki-bangun.png";
+import sekolahkopi from "../../assets/images/sekolah-kopi.png";
 import HTML from "../../assets/icons/HTML.svg";
 import CSS from "../../assets/icons/CSS.svg";
 import JS from "../../assets/icons/JS.svg";
@@ -235,6 +237,44 @@ export const projectData = [
       },
     ],
     link: "https://alpha-mode-activity.vercel.app/",
+    year: "2025",
+  },
+  {
+    id: 11,
+    image: cvrizkibangun,
+    title: "CV. Rizki Bangun",
+    category: "frontend",
+    desc: "A simple company profile website using React and Tailwind CSS.",
+    stack: [
+      {
+        name: "React",
+        icon: React,
+      },
+      {
+        name: "Tailwind",
+        icon: Tailwind,
+      },
+    ],
+    link: "https://cv-rizki-bangun.vercel.app/",
+    year: "2025",
+  },
+  {
+    id: 12,
+    image: sekolahkopi,
+    title: "Sekolah Kopi",
+    category: "frontend",
+    desc: "A simple company profile website using React and Tailwind CSS.",
+    stack: [
+      {
+        name: "React",
+        icon: React,
+      },
+      {
+        name: "Tailwind",
+        icon: Tailwind,
+      },
+    ],
+    link: "https://sekolah-kopi.vercel.app/",
     year: "2025",
   },
 ];
